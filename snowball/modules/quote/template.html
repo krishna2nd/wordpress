@@ -1,0 +1,69 @@
+<section class="snowball-block snowball-block-quote{{quotetype}}{{offset}}">
+  <blockquote>
+    <p>{{text}}</p>
+    <cite>{{source}}</cite>
+  </blockquote>
+<style scoped>
+blockquote {
+  margin: 0;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.snowball-block-quote cite {
+  display: block;
+}
+
+.quote-marks blockquote {
+  quotes: "\201C""\201D""\2018""\2019";
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.quote-marks blockquote p:before,
+.quote-marks blockquote p:after {
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+  color: #C6C6C6;
+  font-family: Georgia, serif;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.quote-marks blockquote p:before {
+  content: open-quote;
+  margin-left: -0.67em;
+  margin-right: 0.15em;
+}
+
+.quote-marks blockquote p:after {
+  content: close-quote;
+  margin-right: -0.67em;
+}
+
+.quote-bar blockquote {
+  padding-left: 1.5em;
+  padding-bottom: 1em;
+  border-left: 0.4rem solid #C6C6C6;
+  font-size: inherit;
+  font-style: inherit;
+}
+
+.speech-bubble blockquote {
+  position: relative;
+  padding: 0.25em 1.5em 1em;
+  border-radius: 0.5em;
+  margin-bottom: 2em;
+  background-color: #E4E4E4;
+}
+
+.speech-bubble blockquote:after {
+  content: '';
+  position: absolute;
+  left: 15%;
+  bottom: -2em;
+  border-bottom: 2em solid transparent;
+  border-left: 2em solid #E4E4E4;
+}
+</style>
+</section>

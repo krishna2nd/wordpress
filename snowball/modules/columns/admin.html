@@ -1,0 +1,80 @@
+<form>
+  <div class="toggle-buttons">
+    <div class="toggle-button">Column 1<span class="fa fa-times delete-column"></span></div>
+    <div class="toggle-button">Column 2<span class="fa fa-times delete-column"></span></div>
+    <div class="toggle-button">Column 3<span class="fa fa-times delete-column"></span></div>
+    <div class="toggle-button">Column 4<span class="fa fa-times delete-column"></span></div>
+    <div class="add-button"><span class="fa fa-plus"></span></div>
+  </div>
+  <div class="editors">
+    <textarea class="column-textarea" data-target="col-1" style="height: 100%;"></textarea>
+    <textarea class="column-textarea" data-target="col-2" style="height: 100%;"></textarea>
+    <textarea class="column-textarea" data-target="col-3" style="height: 100%;"></textarea>
+    <textarea class="column-textarea" data-target="col-4" style="height: 100%;"></textarea>
+  </div>
+  <div>
+    <input type="checkbox" data-target="checkbox-col-1" value="show" checked>
+    <input type="checkbox" data-target="checkbox-col-2" value="show">
+    <input type="checkbox" data-target="checkbox-col-3" value="show">
+    <input type="checkbox" data-target="checkbox-col-4" value="show">
+  </div>
+<style>
+.snowball-block-columns input[type="checkbox"] {
+  display: none;
+}
+
+.snowball-block-columns .toggle-buttons {
+  border-bottom: 4px solid #262722;
+}
+
+.snowball-block-columns .toggle-button {
+  display: none;
+  max-width: calc(25% - 4px);
+  padding: 0.5em 0.6em 0.5em 0.8em;
+  background-color: #262722;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.snowball-block-columns .add-button {
+  display: inline-block;
+  padding: 0.5em 0.8em;
+  background-color: #262722;
+  font-size: 1em;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.snowball-block-columns .active,
+.snowball-block-columns .toggle-button:hover,
+.snowball-block-columns .add-button:hover {
+  opacity: 1;
+}
+
+.snowball-block-columns .show {
+  display: inline-block !important;
+}
+
+.snowball-block-columns .delete-column {
+  margin-left: 0.4em;
+  font-size: 1.2em;
+  opacity: 0.5;
+}
+
+.snowball-block-columns .delete-column:hover {
+  opacity: 1;
+  color: #a00;
+}
+
+.snowball-block-columns .editors {
+  height: 300px;
+}
+
+.snowball-block-columns .column-textarea {
+  display: none;
+}
+</style>
+</form>
